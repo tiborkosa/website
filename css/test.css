@@ -1,0 +1,260 @@
+* {
+	margin:0;
+	padding:0;
+	border:none;
+}
+html {
+    height:100%;
+}
+body {
+    background-color:black;
+    height:100%;
+	font-family:Times, "Times New Roman", Georgia, serif;
+    font-size: 70%;
+}
+
+#page1, #page3, #page5 {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}
+#page2, #page4, #page6 {
+    height: 33%;
+    width: 100%;
+    background-color: bisque;
+}
+
+#page7, #page8 {
+    height: 50%;
+    width: 100%;
+    background-color: fuchsia;
+}
+#page8 {
+    background-color:firebrick;
+}
+
+h1{
+    font-size: 32px;
+    color: wheat;
+    text-align: center;
+}
+#page1 {
+    z-index: 1;
+    position:fixed; top:0; left:0;
+}
+#page2 {
+    z-index: 2;
+/*    position:absolute; top:100%; left:0;*/
+}
+#page3 {
+    z-index: 3;
+/*    position:absolute; top:100%; left:0;*/
+}
+#page4 {
+    z-index: 4;
+/*    position:absolute; top:100%; left:0;*/
+}
+#page5 {
+    z-index: 5;
+/*    position:absolute; top:100%; left:0;*/
+}
+#page6 {
+    z-index: 6;
+/*    position:absolute; top:100%; left:0;*/
+}
+#page7 {
+    z-index: 7;
+/*    position:fixed; top:100%; left:0;*/
+}
+#page8 {
+    z-index: 8;
+/*    position:fixed; top:100%; left:0;*/
+}
+
+
+
+
+
+/* Addition deletion */
+/* keyframe for opening content */
+
+/*
+@-webkit-keyframes openSide {
+    0%   {-webkit-transform: rotateY(-90deg)}
+    85%  {-webkit-transform: rotateY(20deg)}
+    92%  {-webkit-transform: rotateY(-10deg)}
+    100% {-webkit-transform: rotateY(0)}
+}
+@-moz-keyframes openSide {
+    0%   {-moz-transform: rotateY(-90deg)}
+    85%  {-moz-transform: rotateY(20deg)}
+    92%  {-moz-transform: rotateY(-10deg)}
+    100% {-moz-transform: rotateY(0)}
+}
+@keyframes openSide {
+    0%   {transform: rotateY(-90deg);}
+    85%  {transform: rotateY(20deg)}
+    92%  {transform: rotateY(-10deg)}
+    100% {transform: rotateY(0);}
+}
+*/
+
+/* page content */
+
+/*
+#page2 h1 {
+    text-align: left;
+    display: block;
+    height: auto;
+    width: auto;
+   padding: 5%;
+}
+*/
+/*
+#page2 .box {
+    height: 40%;
+    width: 25%;
+    position: absolute;
+    background-color: antiquewhite;
+    box-shadow: 10px 5px 7px #9E9696, inset 1px 1px 20px #ADA5A5, inset -1px -1px 20px #ADA5A5;
+    display: none;
+}
+*/
+/*
+#page2 .box:hover{
+    box-shadow: 4px 2px 3px #9E9696, inset 1px 1px 20px #DBD0D0, inset -2px -2px 10px #DBD0D0;
+}
+*/
+/*
+#page2 .box:nth-child(4) {
+    margin-left: 100%;   
+}
+#page2 .box:nth-child(3) {
+    margin-left: 37%;
+}
+#page2 .box:nth-child(2) {
+    margin-left: -32%;  
+}
+
+#page2 div p {
+    text-align: center;
+    margin-top: 35%;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+*/
+
+/* Birds animation */
+
+/* Chrome, Safari, Opera */
+/*
+@-webkit-keyframes fly {
+    0%   {left:-300px; top:50%; height: 200px}
+    100% {left:75%; top:-200px; height: 50px}
+}
+*/
+/* Fox */
+/*
+@-moz-keyframes fly {
+    0%   {left:-300px; top:50%; height: 200px}
+    100% {left:75%; top:-200px; height: 50px}
+}
+*/
+/* Standard syntax */
+/*
+@keyframes fly {
+    0%   {left:-300px; top:50%; height: 200px}
+    100% {left:75%; top:-200px; height: 50px}
+}
+#bird_fly {
+    position: relative;
+    top:50%;
+    left: -300px;
+    height: 200px;
+    width: auto;
+    -webkit-animation: fly 15s linear 4s;
+        -moz-animation: fly 15s linear 4s;
+            animation: fly 15s linear 4s;
+}
+#bird_fly img {
+    height: 100%;
+    width: auto;
+}
+*/
+
+/* start button */
+/*
+#page3 .button {
+    margin-top: 20%;
+    margin-left: 40%;
+    width: 15%;
+    height: 45px;
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: dodgerblue;
+    box-shadow: inset 0 0 5px white, inset -1px -1px 4px white;
+    border-radius: 5px;
+    color: wheat;
+}
+#page3 .button:hover {
+    box-shadow:1px 1px 5px white, inset 1px 1px 10px white, inset -2px -2px 10px white;
+    font-size: 1.7em;
+}
+*/
+
+/* other buttons */
+/*
+#button-wrapper {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin-top: 22%;
+}
+#page4 .buttons {
+    display: none;
+    float: left;
+    margin: 1%;
+    padding:10px 12px;
+    width: auto;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: dodgerblue;
+    background-color: white;
+    border-radius: 35%; 
+    box-shadow: inset 1px 1px 5px darkblue, inset -1px -1px 4px darkblue;
+}
+#page4 .buttons:hover {
+     box-shadow: inset 2px 2px 10px lightblue, 0 12px 10px darkblue;
+}
+#page4 table {
+    display: none;
+    width: 80%;
+    padding-top: 100px;
+    margin-left: 10%;
+    height: 30%;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+#page4 table td {
+    width: 15%;
+    height: 60px;
+}
+#page4 table img {
+    height: 80%;
+    width: auto;
+}
+#page4 td:first-child { 
+    color:darkblue;
+    text-shadow: none;
+    font-size: 1.4em;
+}
+#page4 img {
+    display: none;
+    height: 20px;
+    width: 20px;
+}*/
+
+

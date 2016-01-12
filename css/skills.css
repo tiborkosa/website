@@ -1,0 +1,91 @@
+* {
+    margin:0;
+    padding:0;
+    border:none;
+}
+body {
+    background: -webkit-linear-gradient(left, #DBD5A4 20%, #88D8C0 50%, #5AD6FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #DBD5A4 20%, #88D8C0 50%, #5AD6FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #DBD5A4 20%, #88D8C0 50%, #5AD6FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #DBD5A4 20%, #88D8C0 50%, #5AD6FF); /* Standard syntax */
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+#text {
+    width:40%;
+    margin-left:3%;
+    padding-top:10%;
+    color:green;
+    font-size:1em;
+    font-weight:400;
+}
+p{
+    width:75%;
+    margin-left:10%;
+}
+table {
+    position:absolute;
+    width:50%;
+    margin-left:45%;
+    height:auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    border-collapse:collapse;
+    color:white;
+    font-size:1em;
+    font-weight:800;
+}
+table img {
+    height:40px;
+    width:40px;
+}
+.table-top {
+    background-color:rgba(211,199,162,0.3);
+    color:#518251;
+    font-weight:bold;
+    border-bottom:none;
+}
+td {
+    text-align:center;
+    width:10%;
+}
+.row1 {
+    width:15%;
+    height:45px;
+    text-align:left;
+}
+
+.fish {
+    -webkit-animation: fishMove 1s ease-in-out alternate infinite;
+        animation: fishMove 1s ease-in-out alternate infinite;
+}
+@-webkit-keyframes fishMove {
+    0% {padding-right:10px;}
+    50% {padding-top:1px;}
+    100% {padding-left:10px;}
+}
+@keyframes fishMove {
+    0% {padding-right:10px;}
+    50% {padding-top:1px;}
+    100% {padding-left:10px;}
+}
+#back {
+    position:absolute;
+    top:20px;
+    left:20px;
+    height:70px;
+    width:70px;
+    -webkit-animation: glowArrow 1s ease-in-out alternate infinite;
+        animation: glowArrow 1s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes glowArrow {
+    0% {left:20px;}
+    100%{left:30px;}
+}
+@keyframes glowArrow {
+    0% {left:20px;}
+    100%{left:30px;}
+}
+
+
+
